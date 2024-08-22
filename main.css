@@ -88,7 +88,7 @@ section h2{
 }
 
 .lista-veiculos li img{
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .lista-veiculos li{
@@ -101,7 +101,7 @@ section h2{
 
 button{
     display: block;
-    width: 100%;
+    width: 90%;
     padding: 8px 0;
     border: none;
     background-color: #119759;
