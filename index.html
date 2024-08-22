@@ -114,13 +114,14 @@
     </section>
     <section>
         <div class="container">
-            <h2>Em destaque</h2>
+            <h2>Promoções</h2>
             <ul class="container-flex lista-veiculos">
                 <li>
                     <img src="./images/carro-bmw.png" alt="Carro da Bmw">
                     <h3>Carro Bmw</h3>
                     <p>Câmbio automático, Duas portas, vidros e travas elétricas.</p>
                     <div class="price">
+                        <Del>R$100.000,00</Del>
                         <strong>R$70.000,00</strong>
                         </div>
                     <button type="button">Tenho interesse</button>
@@ -130,15 +131,7 @@
                     <h3>Carro Fusca</h3>
                     <p>Câmbio automático, Duas portas, vidros e travas elétricas.</p>
                     <div class="price">
-                    <strong>R$70.000,00</strong>
-                    </div>
-                    <button type="button">Tenho interesse</button>
-                </li>
-                <li>
-                    <img src="./images/carro-bmw.png" alt="Carro da Bmw">
-                    <h3>Carro Bmw</h3>
-                    <p>Câmbio automático, Duas portas, vidros e travas elétricas.</p>
-                    <div class="price">
+                        <Del>R$100.000,00</Del>
                         <strong>R$70.000,00</strong>
                     </div>
                     <button type="button">Tenho interesse</button>
@@ -148,6 +141,17 @@
                     <h3>Carro Bmw</h3>
                     <p>Câmbio automático, Duas portas, vidros e travas elétricas.</p>
                     <div class="price">
+                        <Del>R$100.000,00</Del>
+                        <strong>R$70.000,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/carro-bmw.png" alt="Carro da Bmw">
+                    <h3>Carro Bmw</h3>
+                    <p>Câmbio automático, Duas portas, vidros e travas elétricas.</p>
+                    <div class="price">
+                        <Del>R$100.000,00</Del>
                         <strong>R$70.000,00</strong>
                     </div>
                     <button type="button">Tenho interesse</button>
@@ -157,32 +161,33 @@
                     <h3>Carro Fusca</h3>
                     <p>Câmbio automático, Duas portas, vidros e travas elétricas.</p>
                     <div class="price">
-                    <strong>R$70.000,00</strong>
+                        <Del>R$100.000,00</Del>
+                        <strong>R$70.000,00</strong>
                     </div>
                     <button type="button">Tenho interesse</button>
                 </li>
             </ul>
         </div>
 </section>
-<section>
+<section id="contato">
     <div class="container">
         <h2>Entre em contato</h2>
         <form>
             <div class="form-campo">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome">
+                    <input type="text" id="nome" name="nome">
                 </div>
                 <div class="form-campo">
                     <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone">
+                    <input type="tel" id="telefone" name="telefone">
                 </div>
                 <div class="form-campo">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" name="email">
                 </div>
                 <div class="form-campo">
                     <label for="veiculo-interesse">Veículo de interesse</label>
-                    <input type="text" id="veiculo-interesse">
+                    <input type="text" id="veiculo-interesse" name="veiculoDeInteresse">
                 </div>
                 <div class="form-campo">
                     <label for="mensagem">Mensagem</label>
@@ -192,19 +197,36 @@
         </form>
     </div>
 </section>
+<footer>
+    <div class="container container-flex">
+        <p>
+            2024 &copy; EBAC Motors - Todos os direitos reservados
+        </p>
+        <ul class="container-flex">
+            <li >
+                <a href="#">
+                    <img src="./icones/facebook.png" alt="Facebook">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./icones/instagram.png" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./icones/youtube.png" alt="youtube">
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#carousel-imagens').slick({
-                autoplay:true
-            });
-
-            $('.menu-hamburguer').click(function(){
-                $('nav').slideToggle()
-            })
-        })
-    </script>
+    <script src="./jq/jquery.mask.min.js"></script>
+    <script src="./jq/jquery.validate.min.js"></script>
+    <script src="./jq/messages_pt_BR.js"></script>
+    <script src="./Js/main.js"></script>
 </body>
 </html>
